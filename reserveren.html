@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="#" href="#">
+
+    <title>Winter Efteling home pagina</title>
+</head>
+<body>
+    <header>
+        <a href="home.html">
+            <img src="images/logo_efteling.jpeg" alt="go home"/>
+          </a>
+          <nav>
+        <button aria-hidden="true">
+            <img src="images/menu_hamburger.png" alt="keuze menu">Menu</button>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="#"> Reserveren</a>
+                </li>
+                <li>
+                    <a href="#"> Verblijf</a>
+                </li>
+                <li>
+                    <a href="#"> Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#"><img aria-hidden="true" src="images/zoekicoon.png" alt="#"/>Zoeken</a>
+    </header>
+    
+    <main class="reserveren">
+        <section>
+            <img src="images/pardoes_02.png" alt="#">
+            <img src="images/sneeuw_2.png" alt="#">
+            <h3>Dagje Winter Efteling reserveren?</h3>
+        </section>
+        <section>
+            <form>
+                <label for='voornaam'>Voornaam</label>
+                <input id='voornaam' name='voornaam' type='text' placeholder='Vasilis'/>
+                <label for='achternaam'>Achternaam</label>
+                <input id='achternaam' name='achternaam' type='text' placeholder='van Gemert'/>
+
+                <fieldset>
+                    <legend>Geslacht</legend>
+                    <input id="geslacht-man" name="geslacht" type="radio"><label for="geslacht">Man</label>
+                    <input id="geslacht-vrouw" name="geslacht" type="radio"><label for="geslacht">Vrouw</label>
+                    <input id="geslacht-anders" name="geslacht" type="radio"><label for="geslacht">Anders</label>
+                </fieldset>
+
+                <label for='leeftijd'>Leeftijd</label>
+                <select id='leeftijd' name='leeftijd'>
+                    <option value='peuter'>&lt; 4 jaar</option>
+                    <option value='kind'>5 t/m 12 jaar</option>
+                    <option value='puber'>12 t/m 18 jaar</option>
+                    <option value='volwassen'>18 +</option>
+                    <option value='ouderen'>65 +</option>
+                </select>
+
+                <label for='email'>Email</label>
+                <input id='email' name='email' type='email' placeholder='efteling@example.com'/>
+                
+                <button>Bevestigen</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+                <h3>Over Efteling</h3>
+                <ul>
+                    <li><a href="#">Overzicht</a></li>
+                    <li><a href="#">Over ons</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+        </section>
+        <section>
+            <form action="#" method="post">
+                <label for='email'>Meld je aan voor onze nieuwsbrief!</label>
+                <input type="text" name="email" placeholder="Email">
+                <button>Aanmelden</button>
+            </form>
+        </section>
+        <section>
+            <img src="images/inactive_facebook.png" alt="#">
+            <img src="images/inactive_instagram.png" alt="#">
+            <img src="images/inactive_twitter.png" alt="#">
+            <img src="images/inactive_youtube.png" alt="#">
+        </section>
+    </footer>
+
+     <script defer="" src="script.js"></script>
+</body>
+</html>
